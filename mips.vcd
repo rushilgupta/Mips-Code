@@ -1,0 +1,1005 @@
+$date
+     Dec 12, 2009       16:13:20
+$end
+
+$version
+              SystemC 2.2.0 --- Nov 17 2009 16:51:42
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$var wire    1  aaa  clock       $end
+$var wire   32  aab  bus_mux1 [31:0]  $end
+$var wire   32  aac  bus_mux2 [31:0]  $end
+$var wire   32  aad  bus_mux3 [31:0]  $end
+$var wire    5  aae  bus_mux4 [4:0]  $end
+$var wire   32  aaf  bus_pc [31:0]  $end
+$var wire   32  aag  bus_add1 [31:0]  $end
+$var wire   32  aah  bus_add2 [31:0]  $end
+$var wire   32  aai  bus_shiftleft [31:0]  $end
+$var wire   32  aaj  bus_signextend [31:0]  $end
+$var wire   32  aak  bus_imem_1 [31:0]  $end
+$var wire   32  aal  bus_dmem_1 [31:0]  $end
+$var wire   32  aam  bus_alu_result [31:0]  $end
+$var wire    1  aan  bus_alu_zero       $end
+$var wire   32  aao  bus_registers_1 [31:0]  $end
+$var wire   32  aap  bus_registers_2 [31:0]  $end
+$var wire    1  aaq  bus_ctrl_regdst       $end
+$var wire    1  aar  bus_ctrl_branch       $end
+$var wire    1  aas  bus_ctrl_memread       $end
+$var wire    1  aat  bus_ctrl_memtoreg       $end
+$var wire    2  aau  bus_ctrl_aluop [1:0]  $end
+$var wire    1  aav  bus_ctrl_memwrite       $end
+$var wire    1  aaw  bus_ctrl_alusrc       $end
+$var wire    1  aax  bus_ctrl_regwrite       $end
+$var wire   32  aay  bus_ctrl_c4 [31:0]  $end
+$var wire    3  aaz  bus_aluctrl [2:0]  $end
+$var wire    1  aba  bus_and1       $end
+$var wire    6  abb  bus_decoder_instr_31_26 [5:0]  $end
+$var wire    5  abc  bus_decoder_instr_25_21 [4:0]  $end
+$var wire    5  abd  bus_decoder_instr_20_16 [4:0]  $end
+$var wire    5  abe  bus_decoder_instr_15_11 [4:0]  $end
+$var wire   16  abf  bus_decoder_instr_15_0 [15:0]  $end
+$var wire    6  abg  bus_decoder_instr_5_0 [5:0]  $end
+$var wire   32  abh  registers.reg(0) [31:0]  $end
+$var wire   32  abi  registers.reg(1) [31:0]  $end
+$var wire   32  abj  registers.reg(2) [31:0]  $end
+$var wire   32  abk  registers.reg(3) [31:0]  $end
+$var wire   32  abl  registers.reg(4) [31:0]  $end
+$var wire   32  abm  registers.reg(5) [31:0]  $end
+$var wire   32  abn  registers.reg(6) [31:0]  $end
+$var wire   32  abo  registers.reg(7) [31:0]  $end
+$var wire   32  abp  registers.reg(8) [31:0]  $end
+$var wire   32  abq  registers.reg(9) [31:0]  $end
+$var wire   32  abr  registers.reg(10) [31:0]  $end
+$var wire   32  abs  registers.reg(11) [31:0]  $end
+$var wire   32  abt  registers.reg(12) [31:0]  $end
+$var wire   32  abu  registers.reg(13) [31:0]  $end
+$var wire   32  abv  registers.reg(14) [31:0]  $end
+$var wire   32  abw  registers.reg(15) [31:0]  $end
+$var wire   32  abx  registers.reg(16) [31:0]  $end
+$var wire   32  aby  registers.reg(17) [31:0]  $end
+$var wire   32  abz  registers.reg(18) [31:0]  $end
+$var wire   32  aca  registers.reg(19) [31:0]  $end
+$var wire   32  acb  registers.reg(20) [31:0]  $end
+$var wire   32  acc  registers.reg(21) [31:0]  $end
+$var wire   32  acd  registers.reg(22) [31:0]  $end
+$var wire   32  ace  registers.reg(23) [31:0]  $end
+$var wire   32  acf  registers.reg(24) [31:0]  $end
+$var wire   32  acg  registers.reg(25) [31:0]  $end
+$var wire   32  ach  registers.reg(26) [31:0]  $end
+$var wire   32  aci  registers.reg(27) [31:0]  $end
+$var wire   32  acj  registers.reg(28) [31:0]  $end
+$var wire   32  ack  registers.reg(29) [31:0]  $end
+$var wire   32  acl  registers.reg(30) [31:0]  $end
+$var wire   32  acm  registers.reg(31) [31:0]  $end
+$var wire    8  acn  memory.dmem(0) [7:0]  $end
+$var wire    8  aco  memory.dmem(1) [7:0]  $end
+$var wire    8  acp  memory.dmem(2) [7:0]  $end
+$var wire    8  acq  memory.dmem(3) [7:0]  $end
+$var wire    8  acr  memory.dmem(4) [7:0]  $end
+$var wire    8  acs  memory.dmem(5) [7:0]  $end
+$var wire    8  act  memory.dmem(6) [7:0]  $end
+$var wire    8  acu  memory.dmem(7) [7:0]  $end
+$var wire    8  acv  memory.dmem(8) [7:0]  $end
+$var wire    8  acw  memory.dmem(9) [7:0]  $end
+$var wire    8  acx  memory.dmem(10) [7:0]  $end
+$var wire    8  acy  memory.dmem(11) [7:0]  $end
+$var wire    8  acz  memory.dmem(12) [7:0]  $end
+$var wire    8  ada  memory.dmem(13) [7:0]  $end
+$var wire    8  adb  memory.dmem(14) [7:0]  $end
+$var wire    8  adc  memory.dmem(15) [7:0]  $end
+$var wire    8  add  memory.dmem(16) [7:0]  $end
+$var wire    8  ade  memory.dmem(17) [7:0]  $end
+$var wire    8  adf  memory.dmem(18) [7:0]  $end
+$var wire    8  adg  memory.dmem(19) [7:0]  $end
+$var wire    8  adh  memory.dmem(20) [7:0]  $end
+$var wire    8  adi  memory.dmem(21) [7:0]  $end
+$var wire    8  adj  memory.dmem(22) [7:0]  $end
+$var wire    8  adk  memory.dmem(23) [7:0]  $end
+$var wire    8  adl  memory.dmem(24) [7:0]  $end
+$var wire    8  adm  memory.dmem(25) [7:0]  $end
+$var wire    8  adn  memory.dmem(26) [7:0]  $end
+$var wire    8  ado  memory.dmem(27) [7:0]  $end
+$var wire    8  adp  memory.dmem(28) [7:0]  $end
+$var wire    8  adq  memory.dmem(29) [7:0]  $end
+$var wire    8  adr  memory.dmem(30) [7:0]  $end
+$var wire    8  ads  memory.dmem(31) [7:0]  $end
+$var wire    8  adt  memory.dmem(32) [7:0]  $end
+$var wire    8  adu  memory.dmem(33) [7:0]  $end
+$var wire    8  adv  memory.dmem(34) [7:0]  $end
+$var wire    8  adw  memory.dmem(35) [7:0]  $end
+$var wire    8  adx  memory.dmem(36) [7:0]  $end
+$var wire    8  ady  memory.dmem(37) [7:0]  $end
+$var wire    8  adz  memory.dmem(38) [7:0]  $end
+$var wire    8  aea  memory.dmem(39) [7:0]  $end
+$var wire    8  aeb  memory.dmem(40) [7:0]  $end
+$var wire    8  aec  memory.dmem(41) [7:0]  $end
+$var wire    8  aed  memory.dmem(42) [7:0]  $end
+$var wire    8  aee  memory.dmem(43) [7:0]  $end
+$var wire    8  aef  memory.dmem(44) [7:0]  $end
+$var wire    8  aeg  memory.dmem(45) [7:0]  $end
+$var wire    8  aeh  memory.dmem(46) [7:0]  $end
+$var wire    8  aei  memory.dmem(47) [7:0]  $end
+$var wire    8  aej  memory.dmem(48) [7:0]  $end
+$var wire    8  aek  memory.dmem(49) [7:0]  $end
+$var wire    8  ael  memory.dmem(50) [7:0]  $end
+$var wire    8  aem  memory.dmem(51) [7:0]  $end
+$var wire    8  aen  memory.dmem(52) [7:0]  $end
+$var wire    8  aeo  memory.dmem(53) [7:0]  $end
+$var wire    8  aep  memory.dmem(54) [7:0]  $end
+$var wire    8  aeq  memory.dmem(55) [7:0]  $end
+$var wire    8  aer  memory.dmem(56) [7:0]  $end
+$var wire    8  aes  memory.dmem(57) [7:0]  $end
+$var wire    8  aet  memory.dmem(58) [7:0]  $end
+$var wire    8  aeu  memory.dmem(59) [7:0]  $end
+$var wire    8  aev  memory.dmem(60) [7:0]  $end
+$var wire    8  aew  memory.dmem(61) [7:0]  $end
+$var wire    8  aex  memory.dmem(62) [7:0]  $end
+$var wire    8  aey  memory.dmem(63) [7:0]  $end
+$var wire    8  aez  memory.dmem(64) [7:0]  $end
+$var wire    8  afa  memory.dmem(65) [7:0]  $end
+$var wire    8  afb  memory.dmem(66) [7:0]  $end
+$var wire    8  afc  memory.dmem(67) [7:0]  $end
+$var wire    8  afd  memory.dmem(68) [7:0]  $end
+$var wire    8  afe  memory.dmem(69) [7:0]  $end
+$var wire    8  aff  memory.dmem(70) [7:0]  $end
+$var wire    8  afg  memory.dmem(71) [7:0]  $end
+$var wire    8  afh  memory.dmem(72) [7:0]  $end
+$var wire    8  afi  memory.dmem(73) [7:0]  $end
+$var wire    8  afj  memory.dmem(74) [7:0]  $end
+$var wire    8  afk  memory.dmem(75) [7:0]  $end
+$var wire    8  afl  memory.dmem(76) [7:0]  $end
+$var wire    8  afm  memory.dmem(77) [7:0]  $end
+$var wire    8  afn  memory.dmem(78) [7:0]  $end
+$var wire    8  afo  memory.dmem(79) [7:0]  $end
+$var wire    8  afp  memory.dmem(80) [7:0]  $end
+$var wire    8  afq  memory.dmem(81) [7:0]  $end
+$var wire    8  afr  memory.dmem(82) [7:0]  $end
+$var wire    8  afs  memory.dmem(83) [7:0]  $end
+$var wire    8  aft  memory.dmem(84) [7:0]  $end
+$var wire    8  afu  memory.dmem(85) [7:0]  $end
+$var wire    8  afv  memory.dmem(86) [7:0]  $end
+$var wire    8  afw  memory.dmem(87) [7:0]  $end
+$var wire    8  afx  memory.dmem(88) [7:0]  $end
+$var wire    8  afy  memory.dmem(89) [7:0]  $end
+$var wire    8  afz  memory.dmem(90) [7:0]  $end
+$var wire    8  aga  memory.dmem(91) [7:0]  $end
+$var wire    8  agb  memory.dmem(92) [7:0]  $end
+$var wire    8  agc  memory.dmem(93) [7:0]  $end
+$var wire    8  agd  memory.dmem(94) [7:0]  $end
+$var wire    8  age  memory.dmem(95) [7:0]  $end
+$var wire    8  agf  memory.dmem(96) [7:0]  $end
+$var wire    8  agg  memory.dmem(97) [7:0]  $end
+$var wire    8  agh  memory.dmem(98) [7:0]  $end
+$var wire    8  agi  memory.dmem(99) [7:0]  $end
+$var wire    8  agj  memory.dmem(100) [7:0]  $end
+$var wire    8  agk  memory.dmem(101) [7:0]  $end
+$var wire    8  agl  memory.dmem(102) [7:0]  $end
+$var wire    8  agm  memory.dmem(103) [7:0]  $end
+$var wire    8  agn  memory.dmem(104) [7:0]  $end
+$var wire    8  ago  memory.dmem(105) [7:0]  $end
+$var wire    8  agp  memory.dmem(106) [7:0]  $end
+$var wire    8  agq  memory.dmem(107) [7:0]  $end
+$var wire    8  agr  memory.dmem(108) [7:0]  $end
+$var wire    8  ags  memory.dmem(109) [7:0]  $end
+$var wire    8  agt  memory.dmem(110) [7:0]  $end
+$var wire    8  agu  memory.dmem(111) [7:0]  $end
+$var wire    8  agv  memory.dmem(112) [7:0]  $end
+$var wire    8  agw  memory.dmem(113) [7:0]  $end
+$var wire    8  agx  memory.dmem(114) [7:0]  $end
+$var wire    8  agy  memory.dmem(115) [7:0]  $end
+$var wire    8  agz  memory.dmem(116) [7:0]  $end
+$var wire    8  aha  memory.dmem(117) [7:0]  $end
+$var wire    8  ahb  memory.dmem(118) [7:0]  $end
+$var wire    8  ahc  memory.dmem(119) [7:0]  $end
+$var wire    8  ahd  memory.dmem(120) [7:0]  $end
+$var wire    8  ahe  memory.dmem(121) [7:0]  $end
+$var wire    8  ahf  memory.dmem(122) [7:0]  $end
+$var wire    8  ahg  memory.dmem(123) [7:0]  $end
+$var wire    8  ahh  memory.dmem(124) [7:0]  $end
+$var wire    8  ahi  memory.dmem(125) [7:0]  $end
+$var wire    8  ahj  memory.dmem(126) [7:0]  $end
+$var wire    8  ahk  memory.dmem(127) [7:0]  $end
+$var wire    8  ahl  memory.imem(0) [7:0]  $end
+$var wire    8  ahm  memory.imem(1) [7:0]  $end
+$var wire    8  ahn  memory.imem(2) [7:0]  $end
+$var wire    8  aho  memory.imem(3) [7:0]  $end
+$var wire    8  ahp  memory.imem(4) [7:0]  $end
+$var wire    8  ahq  memory.imem(5) [7:0]  $end
+$var wire    8  ahr  memory.imem(6) [7:0]  $end
+$var wire    8  ahs  memory.imem(7) [7:0]  $end
+$var wire    8  aht  memory.imem(8) [7:0]  $end
+$var wire    8  ahu  memory.imem(9) [7:0]  $end
+$var wire    8  ahv  memory.imem(10) [7:0]  $end
+$var wire    8  ahw  memory.imem(11) [7:0]  $end
+$var wire    8  ahx  memory.imem(12) [7:0]  $end
+$var wire    8  ahy  memory.imem(13) [7:0]  $end
+$var wire    8  ahz  memory.imem(14) [7:0]  $end
+$var wire    8  aia  memory.imem(15) [7:0]  $end
+$var wire    8  aib  memory.imem(16) [7:0]  $end
+$var wire    8  aic  memory.imem(17) [7:0]  $end
+$var wire    8  aid  memory.imem(18) [7:0]  $end
+$var wire    8  aie  memory.imem(19) [7:0]  $end
+$var wire    8  aif  memory.imem(20) [7:0]  $end
+$var wire    8  aig  memory.imem(21) [7:0]  $end
+$var wire    8  aih  memory.imem(22) [7:0]  $end
+$var wire    8  aii  memory.imem(23) [7:0]  $end
+$var wire    8  aij  memory.imem(24) [7:0]  $end
+$var wire    8  aik  memory.imem(25) [7:0]  $end
+$var wire    8  ail  memory.imem(26) [7:0]  $end
+$var wire    8  aim  memory.imem(27) [7:0]  $end
+$var wire    8  ain  memory.imem(28) [7:0]  $end
+$var wire    8  aio  memory.imem(29) [7:0]  $end
+$var wire    8  aip  memory.imem(30) [7:0]  $end
+$var wire    8  aiq  memory.imem(31) [7:0]  $end
+$var wire    8  air  memory.imem(32) [7:0]  $end
+$var wire    8  ais  memory.imem(33) [7:0]  $end
+$var wire    8  ait  memory.imem(34) [7:0]  $end
+$var wire    8  aiu  memory.imem(35) [7:0]  $end
+$var wire    8  aiv  memory.imem(36) [7:0]  $end
+$var wire    8  aiw  memory.imem(37) [7:0]  $end
+$var wire    8  aix  memory.imem(38) [7:0]  $end
+$var wire    8  aiy  memory.imem(39) [7:0]  $end
+$var wire    8  aiz  memory.imem(40) [7:0]  $end
+$var wire    8  aja  memory.imem(41) [7:0]  $end
+$var wire    8  ajb  memory.imem(42) [7:0]  $end
+$var wire    8  ajc  memory.imem(43) [7:0]  $end
+$var wire    8  ajd  memory.imem(44) [7:0]  $end
+$var wire    8  aje  memory.imem(45) [7:0]  $end
+$var wire    8  ajf  memory.imem(46) [7:0]  $end
+$var wire    8  ajg  memory.imem(47) [7:0]  $end
+$var wire    8  ajh  memory.imem(48) [7:0]  $end
+$var wire    8  aji  memory.imem(49) [7:0]  $end
+$var wire    8  ajj  memory.imem(50) [7:0]  $end
+$var wire    8  ajk  memory.imem(51) [7:0]  $end
+$var wire    8  ajl  memory.imem(52) [7:0]  $end
+$var wire    8  ajm  memory.imem(53) [7:0]  $end
+$var wire    8  ajn  memory.imem(54) [7:0]  $end
+$var wire    8  ajo  memory.imem(55) [7:0]  $end
+$var wire    8  ajp  memory.imem(56) [7:0]  $end
+$var wire    8  ajq  memory.imem(57) [7:0]  $end
+$var wire    8  ajr  memory.imem(58) [7:0]  $end
+$var wire    8  ajs  memory.imem(59) [7:0]  $end
+$var wire    8  ajt  memory.imem(60) [7:0]  $end
+$var wire    8  aju  memory.imem(61) [7:0]  $end
+$var wire    8  ajv  memory.imem(62) [7:0]  $end
+$var wire    8  ajw  memory.imem(63) [7:0]  $end
+$var wire    8  ajx  memory.imem(64) [7:0]  $end
+$var wire    8  ajy  memory.imem(65) [7:0]  $end
+$var wire    8  ajz  memory.imem(66) [7:0]  $end
+$var wire    8  aka  memory.imem(67) [7:0]  $end
+$var wire    8  akb  memory.imem(68) [7:0]  $end
+$var wire    8  akc  memory.imem(69) [7:0]  $end
+$var wire    8  akd  memory.imem(70) [7:0]  $end
+$var wire    8  ake  memory.imem(71) [7:0]  $end
+$var wire    8  akf  memory.imem(72) [7:0]  $end
+$var wire    8  akg  memory.imem(73) [7:0]  $end
+$var wire    8  akh  memory.imem(74) [7:0]  $end
+$var wire    8  aki  memory.imem(75) [7:0]  $end
+$var wire    8  akj  memory.imem(76) [7:0]  $end
+$var wire    8  akk  memory.imem(77) [7:0]  $end
+$var wire    8  akl  memory.imem(78) [7:0]  $end
+$var wire    8  akm  memory.imem(79) [7:0]  $end
+$var wire    8  akn  memory.imem(80) [7:0]  $end
+$var wire    8  ako  memory.imem(81) [7:0]  $end
+$var wire    8  akp  memory.imem(82) [7:0]  $end
+$var wire    8  akq  memory.imem(83) [7:0]  $end
+$var wire    8  akr  memory.imem(84) [7:0]  $end
+$var wire    8  aks  memory.imem(85) [7:0]  $end
+$var wire    8  akt  memory.imem(86) [7:0]  $end
+$var wire    8  aku  memory.imem(87) [7:0]  $end
+$var wire    8  akv  memory.imem(88) [7:0]  $end
+$var wire    8  akw  memory.imem(89) [7:0]  $end
+$var wire    8  akx  memory.imem(90) [7:0]  $end
+$var wire    8  aky  memory.imem(91) [7:0]  $end
+$var wire    8  akz  memory.imem(92) [7:0]  $end
+$var wire    8  ala  memory.imem(93) [7:0]  $end
+$var wire    8  alb  memory.imem(94) [7:0]  $end
+$var wire    8  alc  memory.imem(95) [7:0]  $end
+$var wire    8  ald  memory.imem(96) [7:0]  $end
+$var wire    8  ale  memory.imem(97) [7:0]  $end
+$var wire    8  alf  memory.imem(98) [7:0]  $end
+$var wire    8  alg  memory.imem(99) [7:0]  $end
+$var wire    8  alh  memory.imem(100) [7:0]  $end
+$var wire    8  ali  memory.imem(101) [7:0]  $end
+$var wire    8  alj  memory.imem(102) [7:0]  $end
+$var wire    8  alk  memory.imem(103) [7:0]  $end
+$var wire    8  all  memory.imem(104) [7:0]  $end
+$var wire    8  alm  memory.imem(105) [7:0]  $end
+$var wire    8  aln  memory.imem(106) [7:0]  $end
+$var wire    8  alo  memory.imem(107) [7:0]  $end
+$var wire    8  alp  memory.imem(108) [7:0]  $end
+$var wire    8  alq  memory.imem(109) [7:0]  $end
+$var wire    8  alr  memory.imem(110) [7:0]  $end
+$var wire    8  als  memory.imem(111) [7:0]  $end
+$var wire    8  alt  memory.imem(112) [7:0]  $end
+$var wire    8  alu  memory.imem(113) [7:0]  $end
+$var wire    8  alv  memory.imem(114) [7:0]  $end
+$var wire    8  alw  memory.imem(115) [7:0]  $end
+$var wire    8  alx  memory.imem(116) [7:0]  $end
+$var wire    8  aly  memory.imem(117) [7:0]  $end
+$var wire    8  alz  memory.imem(118) [7:0]  $end
+$var wire    8  ama  memory.imem(119) [7:0]  $end
+$var wire    8  amb  memory.imem(120) [7:0]  $end
+$var wire    8  amc  memory.imem(121) [7:0]  $end
+$var wire    8  amd  memory.imem(122) [7:0]  $end
+$var wire    8  ame  memory.imem(123) [7:0]  $end
+$var wire    8  amf  memory.imem(124) [7:0]  $end
+$var wire    8  amg  memory.imem(125) [7:0]  $end
+$var wire    8  amh  memory.imem(126) [7:0]  $end
+$var wire    8  ami  memory.imem(127) [7:0]  $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+1aaa
+b100 aab
+b0 aac
+b0 aad
+b0 aae
+b0 aaf
+b100 aag
+b100 aah
+b0 aai
+b0 aaj
+b0 aak
+b0 aal
+b0 aam
+1aan
+b0 aao
+b0 aap
+1aaq
+0aar
+0aas
+0aat
+b10 aau
+0aav
+0aaw
+1aax
+b100 aay
+b100 aaz
+0aba
+b0 abb
+b0 abc
+b0 abd
+b0 abe
+b0 abf
+b0 abg
+b0 abh
+b0 abi
+b0 abj
+b0 abk
+b0 abl
+b0 abm
+b0 abn
+b0 abo
+b0 abp
+b0 abq
+b0 abr
+b0 abs
+b0 abt
+b0 abu
+b0 abv
+b0 abw
+b0 abx
+b0 aby
+b0 abz
+b0 aca
+b0 acb
+b0 acc
+b0 acd
+b0 ace
+b0 acf
+b0 acg
+b0 ach
+b0 aci
+b0 acj
+b0 ack
+b0 acl
+b0 acm
+b0 acn
+b0 aco
+b0 acp
+b1 acq
+b0 acr
+b0 acs
+b0 act
+b101 acu
+b0 acv
+b0 acw
+b0 acx
+b0 acy
+b0 acz
+b0 ada
+b0 adb
+b0 adc
+b0 add
+b0 ade
+b0 adf
+b0 adg
+b0 adh
+b0 adi
+b0 adj
+b0 adk
+b0 adl
+b0 adm
+b0 adn
+b0 ado
+b0 adp
+b0 adq
+b0 adr
+b0 ads
+b0 adt
+b0 adu
+b0 adv
+b0 adw
+b0 adx
+b0 ady
+b0 adz
+b0 aea
+b0 aeb
+b0 aec
+b0 aed
+b0 aee
+b0 aef
+b0 aeg
+b0 aeh
+b0 aei
+b0 aej
+b0 aek
+b0 ael
+b0 aem
+b0 aen
+b0 aeo
+b0 aep
+b0 aeq
+b0 aer
+b0 aes
+b0 aet
+b0 aeu
+b0 aev
+b0 aew
+b0 aex
+b0 aey
+b0 aez
+b0 afa
+b0 afb
+b0 afc
+b0 afd
+b0 afe
+b0 aff
+b0 afg
+b0 afh
+b0 afi
+b0 afj
+b0 afk
+b0 afl
+b0 afm
+b0 afn
+b0 afo
+b0 afp
+b0 afq
+b0 afr
+b0 afs
+b0 aft
+b0 afu
+b0 afv
+b0 afw
+b0 afx
+b0 afy
+b0 afz
+b0 aga
+b0 agb
+b0 agc
+b0 agd
+b0 age
+b0 agf
+b0 agg
+b0 agh
+b0 agi
+b0 agj
+b0 agk
+b0 agl
+b0 agm
+b0 agn
+b0 ago
+b0 agp
+b0 agq
+b0 agr
+b0 ags
+b0 agt
+b0 agu
+b0 agv
+b0 agw
+b0 agx
+b0 agy
+b0 agz
+b0 aha
+b0 ahb
+b0 ahc
+b0 ahd
+b0 ahe
+b0 ahf
+b0 ahg
+b0 ahh
+b0 ahi
+b0 ahj
+b0 ahk
+b0 ahl
+b0 ahm
+b0 ahn
+b0 aho
+b10001100 ahp
+b1 ahq
+b0 ahr
+b0 ahs
+b10001100 aht
+b10 ahu
+b0 ahv
+b100 ahw
+b0 ahx
+b100010 ahy
+b11000 ahz
+b100000 aia
+b10101100 aib
+b11 aic
+b0 aid
+b1000 aie
+b0 aif
+b0 aig
+b0 aih
+b0 aii
+b0 aij
+b0 aik
+b0 ail
+b0 aim
+b0 ain
+b0 aio
+b0 aip
+b0 aiq
+b0 air
+b0 ais
+b0 ait
+b0 aiu
+b0 aiv
+b0 aiw
+b0 aix
+b0 aiy
+b0 aiz
+b0 aja
+b0 ajb
+b0 ajc
+b0 ajd
+b0 aje
+b0 ajf
+b0 ajg
+b0 ajh
+b0 aji
+b0 ajj
+b0 ajk
+b0 ajl
+b0 ajm
+b0 ajn
+b0 ajo
+b0 ajp
+b0 ajq
+b0 ajr
+b0 ajs
+b0 ajt
+b0 aju
+b0 ajv
+b0 ajw
+b0 ajx
+b0 ajy
+b0 ajz
+b0 aka
+b0 akb
+b0 akc
+b0 akd
+b0 ake
+b0 akf
+b0 akg
+b0 akh
+b0 aki
+b0 akj
+b0 akk
+b0 akl
+b0 akm
+b0 akn
+b0 ako
+b0 akp
+b0 akq
+b0 akr
+b0 aks
+b0 akt
+b0 aku
+b0 akv
+b0 akw
+b0 akx
+b0 aky
+b0 akz
+b0 ala
+b0 alb
+b0 alc
+b0 ald
+b0 ale
+b0 alf
+b0 alg
+b0 alh
+b0 ali
+b0 alj
+b0 alk
+b0 all
+b0 alm
+b0 aln
+b0 alo
+b0 alp
+b0 alq
+b0 alr
+b0 als
+b0 alt
+b0 alu
+b0 alv
+b0 alw
+b0 alx
+b0 aly
+b0 alz
+b0 ama
+b0 amb
+b0 amc
+b0 amd
+b0 ame
+b0 amf
+b0 amg
+b0 amh
+b0 ami
+$end
+
+#10000
+0aaa
+
+#20000
+1aaa
+b1000 aab
+b1 aad
+b1 aae
+b100 aaf
+b1000 aag
+b1000 aah
+b10001100000000010000000000000000 aak
+b1 aal
+0aaq
+1aas
+1aat
+b0 aau
+1aaw
+b10 aaz
+b100011 abb
+b1 abd
+
+#30000
+0aaa
+b1 abi
+
+#40000
+1aaa
+b1100 aab
+b100 aac
+b101 aad
+b10 aae
+b1000 aaf
+b1100 aag
+b1100 aah
+b100 aaj
+b10001100000000100000000000000100 aak
+b101 aal
+b100 aam
+0aan
+b10 abd
+b100 abf
+b100 abg
+
+#41000
+b11100 aah
+b10000 aai
+
+#50000
+0aaa
+b101 abj
+
+#60000
+1aaa
+b10000 aab
+b101 aac
+b110 aad
+b11 aae
+b1100 aaf
+b10000 aag
+b100000 aah
+b1100000100000 aaj
+b1000100001100000100000 aak
+b110 aam
+b1 aao
+b101 aap
+1aaq
+0aas
+0aat
+b10 aau
+0aaw
+b0 abb
+b1 abc
+b11 abe
+b1100000100000 abf
+b100000 abg
+
+#61000
+b110000010010000 aah
+b110000010000000 aai
+
+#70000
+0aaa
+b110 abk
+
+#80000
+1aaa
+b10100 aab
+b1000 aac
+b1000 aad
+b10000 aaf
+b10100 aag
+b110000010010100 aah
+b1000 aaj
+b10101100000000110000000000001000 aak
+b1000 aam
+b0 aao
+b110 aap
+0aaq
+b0 aau
+1aav
+1aaw
+0aax
+b101011 abb
+b0 abc
+b11 abd
+b0 abe
+b1000 abf
+b1000 abg
+
+#81000
+b110100 aah
+b100000 aai
+
+#90000
+0aaa
+b110 acy
+
+#100000
+1aaa
+b11000 aab
+b0 aac
+b0 aad
+b0 aae
+b10100 aaf
+b11000 aag
+b111000 aah
+b0 aaj
+b0 aak
+b0 aam
+1aan
+b0 aap
+1aaq
+b10 aau
+0aav
+0aaw
+1aax
+b100 aaz
+b0 abb
+b0 abd
+b0 abf
+b0 abg
+
+#101000
+b11000 aah
+b0 aai
+
+#110000
+0aaa
+
+#120000
+1aaa
+b11100 aab
+b11000 aaf
+b11100 aag
+b11100 aah
+
+#130000
+0aaa
+
+#140000
+1aaa
+b100000 aab
+b11100 aaf
+b100000 aag
+b100000 aah
+
+#150000
+0aaa
+
+#160000
+1aaa
+b100100 aab
+b100000 aaf
+b100100 aag
+b100100 aah
+
+#170000
+0aaa
+
+#180000
+1aaa
+b101000 aab
+b100100 aaf
+b101000 aag
+b101000 aah
+
+#190000
+0aaa
+
+#200000
+1aaa
+b101100 aab
+b101000 aaf
+b101100 aag
+b101100 aah
+
+#210000
+0aaa
+
+#220000
+1aaa
+b110000 aab
+b101100 aaf
+b110000 aag
+b110000 aah
+
+#230000
+0aaa
+
+#240000
+1aaa
+b110100 aab
+b110000 aaf
+b110100 aag
+b110100 aah
+
+#250000
+0aaa
+
+#260000
+1aaa
+b111000 aab
+b110100 aaf
+b111000 aag
+b111000 aah
+
+#270000
+0aaa
+
+#280000
+1aaa
+b111100 aab
+b111000 aaf
+b111100 aag
+b111100 aah
+
+#290000
+0aaa
+
+#300000
+1aaa
+b1000000 aab
+b111100 aaf
+b1000000 aag
+b1000000 aah
+
+#310000
+0aaa
+
+#320000
+1aaa
+b1000100 aab
+b1000000 aaf
+b1000100 aag
+b1000100 aah
+
+#330000
+0aaa
+
+#340000
+1aaa
+b1001000 aab
+b1000100 aaf
+b1001000 aag
+b1001000 aah
+
+#350000
+0aaa
+
+#360000
+1aaa
+b1001100 aab
+b1001000 aaf
+b1001100 aag
+b1001100 aah
+
+#370000
+0aaa
+
+#380000
+1aaa
+b1010000 aab
+b1001100 aaf
+b1010000 aag
+b1010000 aah
+
+#390000
+0aaa
+
+#400000
+1aaa
+b1010100 aab
+b1010000 aaf
+b1010100 aag
+b1010100 aah
+
+#410000
+0aaa
+
+#420000
+1aaa
+b1011000 aab
+b1010100 aaf
+b1011000 aag
+b1011000 aah
+
+#430000
+0aaa
+
+#440000
+1aaa
+b1011100 aab
+b1011000 aaf
+b1011100 aag
+b1011100 aah
+
+#450000
+0aaa
+
+#460000
+1aaa
+b1100000 aab
+b1011100 aaf
+b1100000 aag
+b1100000 aah
+
+#470000
+0aaa
+
+#480000
+1aaa
+b1100100 aab
+b1100000 aaf
+b1100100 aag
+b1100100 aah
+
+#490000
+0aaa
+
